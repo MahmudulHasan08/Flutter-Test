@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const OnbordingFirstScreen(),
-      initialRoute: userInteractionPageRoute,
+      initialRoute: onBordinFirstgpageRoute,
       getPages: AppPages.getPages,
     );
  

@@ -299,8 +299,8 @@ class OnbordingSecondScreen extends StatelessWidget {
                       color: const Color(0xff5C5C5C),
                     ),
                     height(25.h),
-                    CustomButton(
-                      name: "Next",
+                    CustomButton2(
+                      name: "GET STARTED",
                       onTap: () {
                         openBottomSheetCreateAccount(context);
                       },

@@ -32,7 +32,7 @@ class CustomButton extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding:  EdgeInsets.only(left: 112.w),
+              padding:  EdgeInsets.only(left: 115.w),
               child: CustomText(
                 text: name,
                 size: 14.sp,
@@ -54,6 +54,57 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
+
+class CustomButton2 extends StatelessWidget {
+  const CustomButton2({super.key, required this.name, this.onTap});
+  final String name;
+  final void Function()? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 265.w,
+        height: 45.h,
+        decoration: BoxDecoration(
+            color: Color(0xff25946A),
+            borderRadius: BorderRadius.circular(25.r),
+            boxShadow: [
+              BoxShadow(
+                color: Color(0xff0000001A).withOpacity(0.1),
+                spreadRadius: 1,
+                blurRadius: 20,
+                offset: Offset(0, 10), // changes position of shadow
+              )
+            ]),
+        child: Row(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding:  EdgeInsets.only(left: 90.w),
+              child: CustomText(
+                text: name,
+                size: 14.sp,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+        
+            width(40.w),
+             Image.asset("assets/images/right.png",width: 15.w,),
+           
+            
+            // SvgPicture.asset(
+            //   "assets/svg/right.svg",color: Colors.white,height: 20,
+            // ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 
 class CustomButtonAuth extends StatelessWidget {
   const CustomButtonAuth({super.key, required this.name, this.onTap});

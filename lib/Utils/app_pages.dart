@@ -1,8 +1,10 @@
 import 'package:get/get.dart';
+import 'package:test/Bindings/home_page_binding.dart';
 import 'package:test/Bindings/onbording_first_binding.dart';
 import 'package:test/Bindings/onbording_second_page_bindings.dart';
 import 'package:test/Bindings/product_api_binding.dart';
 import 'package:test/Bindings/user_interaction_bindings.dart';
+import 'package:test/Views/Home_Page/home_page.dart';
 import 'package:test/Utils/routes.dart';
 import 'package:test/Views/ApiHandle/fetch_product_api.dart';
 import 'package:test/Views/Onbording/onbordingSecond_page.dart';
@@ -29,6 +31,11 @@ static List<GetPage> getPages = [
     name: userInteractionPageRoute,
     page: () => const UserInterActionScreen(),
     binding: UserInteractionBinding(),
+  ),
+  GetPage(
+    name: homePageRoute,
+    page: () => const HomeScreen(),
+    binding: HomePageBinding(),
   ),
 ];
 

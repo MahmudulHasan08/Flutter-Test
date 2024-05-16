@@ -207,7 +207,7 @@ class OnbordingFirstScreen extends StatelessWidget {
                     ),
                 
                     height(25.h),
-                     CustomButton(name: "Next",onTap: (){
+                     CustomButton(name: "NEXT",onTap: (){
                       Get.to(()=> OnbordingSecondScreen());
                      },),
                     height(15.h),
